@@ -1,0 +1,10 @@
+topics covered
+
+Rackawareness
+Commisioning/Decommisioning
+HDFS Shell Commands
+DistCP
+Snapshots
+Centralized Cache Management
+
+
