@@ -1,0 +1,45 @@
+	SSH:Secure Shell Hosting
+
+Secure Shell is a program to log into another computer over a network, to execute commands in a remote machine, and to move files from one machine to another. It provides strong authentication and secure communications over insecure channels. It is a replacement for rlogin, rsh, rcp, and rdist. 
+
+When using ssh's slogin (instead of rlogin) the entire login session, including transmission of password, is encrypted; therefore it is almost impossible for an outsider to collect passwords. 
+
+SSH uses public-key cryptography to authenticate the remote computer and allow the remote computer to authenticate the user, if necessary. 
+
+File transfer can be accomplished using the associated SFTP or SCP protocols. 
+
+By defalut, listens on the standard TCP port 22.
+
+	SCP: Secure Copying
+
+Copies files over the network securely; uses ssh for data transfer, using the same authentication and providing the same security as ssh.
+
+#scp source destination 
+
+ex: - #scp dump.sql 192.168.0.101:/opt
+
+	Key genartion:
+
+#ssh-keygen -t rsa -b 1024
+
+Copy public key to remote location
+
+#scp .ssh/id_rsa.pub 192.168.0.101:.ssh
+
+#ssh 192.168.0.101
+#cp id_rsa.pub autorized_keys2 # if the file does not exist
+#cat id_rsa.pub >>authorized_keys2 # if the file exists
+#exit
+#ssh 192.168.0.101
+
+Key-gen 
+
+http://www.lesbell.com.au/Home.nsf/b8ec57204f60dfcb4a2568c60014ed0f/04eaff076bce249dca256fb6007f53e5?OpenDocument
+
+	WinSCP
+
+WinSCP is a small, free, open-source file transfer client for Windows that uses Secure Shell (SSH) technology to enable the safe copying of files between a local and a remote PC using the File Transfer Protocol (FTP), SSH FTP, or SCP (Secure Copy) protocols, as well as offering some basic file management features.
+
+Read more: WinSCP - Free software downloads and software reviews - CNET Downloads http://download.cnet.com/WinSCP/3000-2160_4-10400769.html#ixzz1SGOHM7Hi
+
+ 
