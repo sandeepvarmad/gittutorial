@@ -1,0 +1,70 @@
+Installation process:
+
+1. We need curl to install rvm(ruby version manager) file.
+sudo apt-get install curl
+
+check curl is installed or not using curl -V
+
+2.Install rvm
+\curl -L https://get.rvm.io | bash -s stable
+
+rvm -v
+
+3.Run below command if rvm is not started
+
+ source /home/<prathyusha>/.rvm/scripts/rvm
+
+Then it will start the rvm.
+
+4.check the requirements of rvm using below command
+
+rvm requirements
+
+Then it will give the command to install all requirements for ruby.
+
+sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config
+
+5.After getting all requirements, install ruby
+
+ rvm install 1.9.3
+
+ check  ruby installation is successful or not using ruby -v
+
+6.We need nodejs also - need info on nodejs requirement.
+
+sudo apt-get install nodejs
+
+7.Create a gemset for the ruby version using below command
+
+
+source ~/.rvm/scripts/rvm
+
+
+rvm --create use 1.9.3@rails3tutorial
+
+8.Set it as default gemset so that it will use 1.9.3 ruby gem by default.
+
+rvm --default use 1.9.3@rails3tutorial
+
+9.we can check default gem set correctly or not using below command.
+
+which gem
+
+10.Now update our default gem
+
+gem update --system
+
+11.After updating the default ruby gem install rails using this gem
+
+gem install rails --version 3.2.9
+
+We can check the rails installation is fine or not using  --> rails -v
+
+12.Now, we can create a small sample app,
+
+mkdir rails_projects   (i.e. creating a directory for our project)
+cd first_app
+rails new <projectname> (then create the project and generate all required files and gems for this project)
+
+cd <projectname> 
+
