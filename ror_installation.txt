@@ -66,5 +66,6 @@ mkdir rails_projects   (i.e. creating a directory for our project)
 cd first_app
 rails new <projectname> (then create the project and generate all required files and gems for this project)
 
-cd <projectname> 
+How to install sublime text
 
+Download .tar file from sublime website,extract it and copy the path to .bashrc file.
