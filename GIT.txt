@@ -15,32 +15,28 @@ Pull Requests --  are the heart of collaboration on GitHub. When you open a pull
 Sample project Hello World -- https://guides.github.com/activities/hello-world/
 https://guides.github.com/introduction/flow/
 
-Commands for GIT
+Commands for GIT -- (https://git-scm.com/docs/)
 
 sudo apt install git -- To install GIT
-git init
+git init -- Create an empty Git repository or reinitialize an existing one (https://git-scm.com/docs/git-init)
 apt-cache search git gui
 sudo apt install git-gui
-git gui
-git config --global user.name "Sandeep Dantuluri"
-git config --global user.email "varma.576@gmail.com"
-git remote add origin https://github.com/svdantuluri/gittutorial.git
-git branch
+git gui -- A portable graphical interface to Git 
+git config -- Get and set repository or global options https://git-scm.com/docs/
+git config --global user.name "Sandeep Dantuluri" --> To create user name
+git config --global user.email "varma.576@gmail.com" --> To create user email
+git remote add origin https://github.com/svdantuluri/gittutorial.git --> Adds a remote named <origin> for the repository at <url>.
+git branch -- > 
 git branch --help
-git branch --list
 git branch -l
-git branch --help
 git push -u origin 
 git push --set-upstream origin master
-git remote add origin https://github.com/svdantuluri/gittutorial.git
 git stash
 git pull
 git stash apply
-git status
+git status --> Show the working tree status
 git remove --help
-gitk
+gitk --> The Git repository browser (https://git-scm.com/docs/gitk)
 gitk --all
 git gui
 git push origin master
-git status
-gitk --all
