@@ -1,2 +1,29 @@
 https://www.youtube.com/watch?v=PL_J5Gj3GAQ&t=550s
 https://www.youtube.com/watch?v=OmRxKQHtDbY
+
+
+Why we need Configuration Management?
+-Configuring large infrastructure was a very hectic job.
+-Rollback to previous stable version of the software was very difficult it takes lot of time.
+-An application works in devloper's machine but not in testing or production.In Dev there can be a software that is updated but in Prod the old version might be present.
+-There can be inconsistency in the computing env due the application might work in Dev but may not work in Prod.
+
+Configuration Management - It is the practise of handling changes systematically so that a system maintains its integrity over time.It allows access to an accurate historical record of system stale.
+is basically a process that helps you to manage chages in your infrastructure in most systematic and structured way.
+-If you are updating a software you keep a record of changes or updates you make to the infrastructure.
+-You achieve configuration management by using Infrastructure as code (IAC)
+-IAC - the code you write for the infrastructure in one central location You can name a master or server etc. 
+ That code is deployed into Dev,Prod & QA env.You can push the code whichever node or env you want.
+
+Solution for Configuring large infrastructure was a very hectic job
+-Write code in one central location and replicate that in n number of nodes advantage of Configuration Management.
+
+Solution for Rollback to previous stable version of the software was very difficult it takes lot of time.
+-As everything is well documented at one location rollbacking is not a time consuming process.
+
+Solution for There can be inconsistency in the computing env
+-Becasue of IAC all the three enviroments will have the same computing env.
+
+
+
+
