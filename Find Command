@@ -1,1 +1,3 @@
 Find Command in Linux
+
+Find command last one day files -- #find dir -mtime 
